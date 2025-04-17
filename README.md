@@ -1,59 +1,35 @@
-# TotalumPanel
+# 🧠 Totalum Panel - Prueba Técnica
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+Este proyecto fue desarrollado como parte de una **prueba técnica** para aplicar a un puesto de trabajo como desarrollador **Full Stack Junior**. Se trata de un panel de gestión construido con **Angular Standalone**, que permite visualizar, buscar, paginar y crear datos de **Clientes**, **Productos** y **Pedidos**, utilizando una API externa (`Totalum API`).
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Tecnologías utilizadas
 
-```bash
-ng serve
-```
+- **Angular 17+ Standalone Components**
+- **HTML & CSS moderno**
+- **TypeScript**
+- **Modularización por features**
+- **Consumo de API externa (Totalum)**
+- **Pagos & Fraude (temática de productos y clientes simulados)**
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🧩 Funcionalidades implementadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+✅ Visualización de tablas dinámicas reutilizables  
+✅ Búsqueda en tiempo real  
+✅ Paginación personalizada  
+✅ Componentes genéricos (tabla, modal)  
+✅ Modal para creación de registros  
+✅ Diferenciación por tipo de dato (`clientes`, `productos`, `pedidos`)  
+✅ Diseño adaptable y visualmente claro  
+✅ Separación por carpetas (`components`, `pages`, `services`)  
+✅ Consumo de datos reales desde una API con autorización  
+✅ Código limpio, comentado y listo para producción  
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🗂️ Estructura del proyecto
 
-```bash
-ng generate --help
-```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
