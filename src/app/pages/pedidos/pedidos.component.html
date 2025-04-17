@@ -1,0 +1,9 @@
+<input [(ngModel)]="searchTerm" placeholder="Buscar pedido o cliente..." />
+
+<app-tabla-generica
+  [columnas]="['numero', 'importe', 'impuestos', 'cantidad', 'fecha', 'cliente']"
+  [datos]="pedidosFiltrados()"
+  tipo="pedidos"
+  [campos]="campos"
+  (guardar)="guardarPedido($event)"
+></app-tabla-generica>

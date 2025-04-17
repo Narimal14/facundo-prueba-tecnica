@@ -1,0 +1,61 @@
+.tabla-container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  
+  .tabla-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .search-input {
+    padding: 8px;
+    width: 50%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-crear {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .tabla-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 1rem;
+  }
+  
+  .btn-paginacion {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  

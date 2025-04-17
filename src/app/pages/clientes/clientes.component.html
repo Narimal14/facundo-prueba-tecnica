@@ -1,0 +1,9 @@
+<input [(ngModel)]="searchTerm" placeholder="Buscar cliente..." />
+
+<app-tabla-generica
+  [columnas]="['nombre', 'nacimiento', 'email', 'telefono']"
+  [datos]="clientesFiltrados()"
+  tipo="clientes"
+  [campos]="campos"
+  (guardar)="guardarCliente($event)"
+></app-tabla-generica>

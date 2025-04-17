@@ -1,0 +1,30 @@
+<input [(ngModel)]="searchTerm" placeholder="Buscar cliente o producto..." class="search-input" />
+
+<button class="crear-btn" (click)="abrirModal()">Crear</button>
+
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let col of columnas">{{ col }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of datosPaginados()">
+      <td *ngFor="let col of columnas">{{ item[col] }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="paginacion">
+  <button (click)="paginaAnterior()" [disabled]="paginaActual === 1">Anterior</button>
+  <span>Página {{ paginaActual }}</span>
+  <button (click)="paginaSiguiente()" [disabled]="paginaActual === totalPaginas()">Siguiente</button>
+</div>
+
+<app-modal-formulario
+  *ngIf="mostrarModal"
+  [tipo]="tipo"
+  [campos]="campos"
+  (cerrar)="cerrarModal()"
+>
+</app-modal-formulario>

@@ -1,0 +1,10 @@
+<input [(ngModel)]="searchTerm" placeholder="Buscar producto..." />
+
+<app-tabla-generica
+  [columnas]="['nombre', 'precio', 'categoria', 'cantidad']"
+  [datos]="productosFiltrados()"
+  tipo="productos"
+  [campos]="campos"
+  (guardar)="guardarProducto($event)"
+>
+</app-tabla-generica>
